@@ -1,0 +1,3 @@
+SRR309282   HeLa mock knockdown 5d       HeLa    Mock        knockdown   RNA-seq paired-end
+SRR309283   HeLa ELAVL1/HuR siRNA1 2d    HeLa    ELAVL/HuR   knockdown   RNA-seq paired-end
+SRR309284   HeLa ELAVL1/HuR siRNA1 5d    HeLa    ELAVL/HuR   knockdown   RNA-seq paired-end
