@@ -1,0 +1,2 @@
+SRR1551164  mock-transfected HEK293T RNA            HEK293T miR-1   Overexpression  total RNA-seq   single-end
+SRR1551166  miR-1-transfected HEK293T RNA           HEK293T miR-1   Overexpression  total RNA-seq   single-end

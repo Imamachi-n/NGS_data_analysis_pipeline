@@ -1,0 +1,78 @@
+This is cutadapt 1.8.1 with Python 2.7.8
+Command line parameters: -m 10 -a ATCGTATGCCGTCTTCTGCTTG ./SRR309286_4SU_SILAC_PAR-CLIP_HuR.fastq
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 838.55 s (38 us/read; 1.56 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              21,837,489
+Reads with adapters:                19,650,637 (90.0%)
+Reads that were too short:           4,029,840 (18.5%)
+Reads written (passing filters):    17,807,649 (81.5%)
+
+Total basepairs processed:   786,149,604 bp
+Total written (filtered):    324,797,957 bp (41.3%)
+
+=== Adapter 1 ===
+
+Sequence: ATCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 22; Trimmed: 19650637 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-22 bp: 2
+
+Bases preceding removed adapters:
+  A: 16.3%
+  C: 22.9%
+  G: 19.4%
+  T: 22.3%
+  none/other: 19.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	67621	341210.8	0	67621
+4	14946	85302.7	0	14946
+5	12363	21325.7	0	12363
+6	12896	5331.4	0	12896
+7	23530	1332.9	0	23530
+8	21577	333.2	0	21577
+9	20304	83.3	0	20209 95
+10	137749	20.8	1	35815 101934
+11	169433	5.2	1	41586 127847
+12	224265	1.3	1	59640 164625
+13	299411	0.3	1	82689 216722
+14	399051	0.1	1	110632 288419
+15	432934	0.0	1	118833 314101
+16	545256	0.0	1	141493 403763
+17	634521	0.0	1	158873 475648
+18	778345	0.0	1	207058 571205 82
+19	1003229	0.0	1	247056 755855 318
+20	1344269	0.0	2	287828 1022180 34261
+21	1964647	0.0	2	536055 1378494 50098
+22	2615198	0.0	2	697034 1854821 63343
+23	3179162	0.0	2	793177 2302640 83345
+24	1139670	0.0	2	195180 908266 36224
+25	373556	0.0	2	38791 324911 9854
+26	206864	0.0	2	15575 187275 4014
+27	113786	0.0	2	5012 107209 1565
+28	69507	0.0	2	5308 63299 900
+29	39653	0.0	2	3691 35360 602
+30	24060	0.0	2	3805 19843 412
+31	13672	0.0	2	2259 11161 252
+32	7075	0.0	2	1201 5701 173
+33	6439	0.0	2	328 5975 136
+34	4000	0.0	2	218 3705 77
+35	3846	0.0	2	314 3405 127
+36	3747802	0.0	2	667 3577586 169549
+
+Could not locate a Bowtie index corresponding to basename "/home/bowtie-0.12.8/indexes/hg19"
+Command: bowtie --wrapper basic-0 -p 8 -v 2 -m 10 --best --strata -S /home/bowtie-0.12.8/indexes/hg19 SRR309286_4SU_SILAC_PAR-CLIP_HuR_2_filtered.fastq 
+# reads processed: 16102432
+# reads with at least one reported alignment: 6682773 (41.50%)
+# reads that failed to align: 1822442 (11.32%)
+# reads with alignments suppressed due to -m: 7597217 (47.18%)
+Reported 6682773 alignments to 1 output stream(s)
+# reads processed: 16102432
+# reads with at least one reported alignment: 6682773 (41.50%)
+# reads that failed to align: 1822442 (11.32%)
+# reads with alignments suppressed due to -m: 7597217 (47.18%)
+Reported 6682773 alignments to 1 output stream(s)

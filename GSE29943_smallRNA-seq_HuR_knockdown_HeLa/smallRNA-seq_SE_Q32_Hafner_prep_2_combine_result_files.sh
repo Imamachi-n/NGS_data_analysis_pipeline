@@ -1,0 +1,2 @@
+#!/bin/sh
+paste htseq_count_result_SRR309288_sRNAseq_Mock.txt htseq_count_result_SRR309289_sRNAseq_HuRKD.txt htseq_count_result_SRR309290_sRNAseq_HuRKD2.txt > htseq_count_result_sRNAseq_HuR_study.txt

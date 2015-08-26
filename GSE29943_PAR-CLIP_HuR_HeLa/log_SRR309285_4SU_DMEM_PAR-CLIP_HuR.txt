@@ -1,0 +1,78 @@
+This is cutadapt 1.8.1 with Python 2.7.8
+Command line parameters: -m 10 -a ATCGTATGCCGTCTTCTGCTTG ./SRR309285_4SU_DMEM_PAR-CLIP_HuR.fastq
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 540.63 s (40 us/read; 1.51 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              13,636,560
+Reads with adapters:                11,932,524 (87.5%)
+Reads that were too short:             585,123 (4.3%)
+Reads written (passing filters):    13,051,437 (95.7%)
+
+Total basepairs processed:   490,916,160 bp
+Total written (filtered):    267,996,608 bp (54.6%)
+
+=== Adapter 1 ===
+
+Sequence: ATCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 22; Trimmed: 11932524 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-22 bp: 2
+
+Bases preceding removed adapters:
+  A: 26.2%
+  C: 18.7%
+  G: 20.7%
+  T: 30.3%
+  none/other: 4.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	21590	213071.2	0	21590
+4	1657	53267.8	0	1657
+5	2952	13317.0	0	2952
+6	7872	3329.2	0	7872
+7	17171	832.3	0	17171
+8	24840	208.1	0	24840
+9	34860	52.0	0	34780 80
+10	191259	13.0	1	70104 121155
+11	228253	3.3	1	68265 159988
+12	327795	0.8	1	99233 228562
+13	432005	0.2	1	133707 298298
+14	827622	0.1	1	176866 650756
+15	735548	0.0	1	213161 522387
+16	929346	0.0	1	229974 699372
+17	1096402	0.0	1	290617 805785
+18	1419974	0.0	1	401853 1017776 345
+19	1492306	0.0	1	333969 1157205 1132
+20	1099090	0.0	2	169035 906096 23959
+21	814146	0.0	2	71229 725361 17556
+22	644171	0.0	2	38572 591761 13838
+23	462991	0.0	2	26590 426382 10019
+24	293429	0.0	2	14999 269648 8782
+25	162434	0.0	2	8968 147718 5748
+26	79688	0.0	2	5076 72479 2133
+27	38175	0.0	2	2356 35156 663
+28	19975	0.0	2	1954 17644 377
+29	10987	0.0	2	1208 9547 232
+30	8131	0.0	2	1497 6441 193
+31	5127	0.0	2	888 4080 159
+32	4125	0.0	2	737 3290 98
+33	7994	0.0	2	450 7312 232
+34	4393	0.0	2	403 3861 129
+35	3885	0.0	2	500 3263 122
+36	482331	0.0	2	788 447152 34391
+
+Could not locate a Bowtie index corresponding to basename "/home/bowtie-0.12.8/indexes/hg19"
+Command: bowtie --wrapper basic-0 -p 8 -v 2 -m 10 --best --strata -S /home/bowtie-0.12.8/indexes/hg19 SRR309285_4SU_DMEM_PAR-CLIP_HuR_2_filtered.fastq 
+# reads processed: 11731731
+# reads with at least one reported alignment: 5412252 (46.13%)
+# reads that failed to align: 2164142 (18.45%)
+# reads with alignments suppressed due to -m: 4155337 (35.42%)
+Reported 5412252 alignments to 1 output stream(s)
+# reads processed: 11731731
+# reads with at least one reported alignment: 5412252 (46.13%)
+# reads that failed to align: 2164142 (18.45%)
+# reads with alignments suppressed due to -m: 4155337 (35.42%)
+Reported 5412252 alignments to 1 output stream(s)

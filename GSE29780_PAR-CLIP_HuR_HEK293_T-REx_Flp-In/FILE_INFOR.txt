@@ -1,0 +1,1 @@
+SRR248532   HuR PAR-CLIP    HEK293 T-REx Flp-In ELAVL/HuR   4SU PAR-CLIP    CLIP-seq    single-end

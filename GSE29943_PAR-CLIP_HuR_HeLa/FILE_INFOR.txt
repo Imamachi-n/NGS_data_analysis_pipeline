@@ -1,0 +1,2 @@
+SRR309285   HeLa 4SU DMEM PAR-CLIP          HeLa    ELAVL/HuR   4SU DMEM PAR-CLIP   CLIP-seq    single-end
+SRR309286   HeLa 4SU SILAC PAR-CLIP         HeLa    ELAVL/HuR   4SU SILAC PAR-CLIP  CLIP-seq    single-end

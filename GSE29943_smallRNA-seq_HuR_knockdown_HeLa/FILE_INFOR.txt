@@ -1,0 +1,3 @@
+SRR309288   HeLa sRNA mock sRNA           HeLa    Mock        knockdown   small RNA-seq   single-end
+SRR309289   HeLa ELAV1/HuR sRNA siRNA1    HeLa    ELAVL/HuR   knockdown   small RNA-seq   single-end
+SRR309290   HeLa ELAV1/HuR sRNA siRNA2    HeLa    ELAVL/HuR   knockdown   small RNA-seq   single-end

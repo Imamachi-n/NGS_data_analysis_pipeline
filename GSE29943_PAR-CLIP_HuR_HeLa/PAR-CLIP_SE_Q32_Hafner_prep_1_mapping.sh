@@ -8,17 +8,16 @@
 filename=`basename $@ .fastq`
 for file in ${filename}
 do
-#fastq-dump ./"$file".sra
-#mkdir fastqc_"$file"
-#fastqc -o ./fastqc_"$file" ./"$file".fastq -f fastq
-#cutadapt -m 10 -a TCGTATGCCGTCTTCTGCTTGAAAAAAAAAAAAAAAAA ./"$file".fastq > ./"$file"_1_trimmed_adapter.fastq 2> ./log_"$file".txt
-#fastq_quality_trimmer -Q33 -t 20 -l 10 -i ./"$file"_1_trimmed_adapter.fastq | fastq_quality_filter -Q33 -q 20 -p 80 -o "$file"_2_filtered.fastq 2>> ./log_"$file".txt
+mkdir fastqc_"$file"
+fastqc -o ./fastqc_"$file" ./"$file".fastq -f fastq
+cutadapt -m 10 -a ATCGTATGCCGTCTTCTGCTTG ./"$file".fastq > ./"$file"_1_trimmed_adapter.fastq 2> ./log_"$file".txt
+fastq_quality_trimmer -Q33 -t 20 -l 10 -i ./"$file"_1_trimmed_adapter.fastq | fastq_quality_filter -Q33 -q 20 -p 80 -o "$file"_2_filtered.fastq 2>> ./log_"$file".txt
 #bowtie -p 8 --un "$file"_3_norrna.fastq /home/akimitsu/bowtie-1.1.0/indexes/contam_Ribosomal_RNA "$file"_2_filtered.fastq > "$file"_3_rrna_contam.fastq 2>> ./log_"$file".txt
-#mkdir fastqc_"$file"_filtered
-#fastqc -o ./fastqc_"$file"_filtered ./"$file"_2_filtered.fastq -f fastq
-#bowtie -p 8 -v 2 -m 10 --best --strata -S --un "$file"_3_unmapped.fastq /home/akimitsu/bowtie-1.1.0/indexes/hg19 "$file"_2_filtered.fastq > "$file"_4_result.sam 2>> ./log_"$file".txt
-#mkdir fastqc_"$file"_unmapped
-#fastqc -o ./fastqc_"$file"_unmapped ./"$file"_3_unmapped.fastq -f fastq
+mkdir fastqc_"$file"_filtered
+fastqc -o ./fastqc_"$file"_filtered ./"$file"_2_filtered.fastq -f fastq
+bowtie -p 8 -v 2 -m 10 --best --strata -S --un "$file"_3_unmapped.fastq /home/akimitsu/bowtie-1.1.0/indexes/hg19 "$file"_2_filtered.fastq > "$file"_4_result.sam 2>> ./log_"$file".txt
+mkdir fastqc_"$file"_unmapped
+fastqc -o ./fastqc_"$file"_unmapped ./"$file"_3_unmapped.fastq -f fastq
 bowtie -p 8 -v 2 -m 10 --best --strata /home/akimitsu/bowtie-1.1.0/indexes/hg19 "$file"_2_filtered.fastq > "$file"_4_result.bowtie 2>> ./log_"$file".txt
 samtools view -Sb "$file"_4_result.sam | samtools sort - "$file"_4_result
 mkdir UCSC_visual_"$file"
