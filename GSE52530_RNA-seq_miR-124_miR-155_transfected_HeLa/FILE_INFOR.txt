@@ -1,0 +1,6 @@
+SRR1032873  miR-124 transfection to HeLa, replicate 1     HeLa    miR-124 Overexpression  total RNA-seq   single-end
+SRR1032874  miR-124 transfection to HeLa, replicate 2     HeLa    miR-124 Overexpression  total RNA-seq   single-end
+SRR1032875  miR-155 transfection to HeLa, replicate 1     HeLa    miR1-55 Overexpression  total RNA-seq   single-end
+SRR1032876  miR-155 transfection to HeLa, replicate 2     HeLa    miR-155 Overexpression  total RNA-seq   single-end
+SRR1032877  Mock transfection to HeLa, replicate 1        HeLa    control Overexpression  total RNA-seq   single-end
+SRR1032878  Mock transfection to HeLa, replicate 2        HeLa    control Overexpression  total RNA-seq   single-end
