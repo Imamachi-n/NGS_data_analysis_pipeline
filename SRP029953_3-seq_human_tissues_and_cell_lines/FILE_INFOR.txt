@@ -1,0 +1,17 @@
+SRR1005606  bcells_1    naive b cells (human donor 1)            3'end   3Seq    single-end
+SRR1005607  bcells_2    naive b cells (human donor 2)            3'end   3Seq    single-end
+SRR1005609  brain_1     brain (Ambion)                           3'end   3Seq    single-end
+SRR1005610  breast_1    breast (Ambion)                          3'end   3Seq    single-end
+SRR1005608  hES_1       hESC (H9)                                3'end   3Seq    single-end
+SRR1005682  ovaries_1   ovary (Ambion)                           3'end   3Seq    single-end
+SRR1005685  skmuscle_1  skeletal muscle (Ambion)                 3'end   3Seq    single-end
+SRR1005683  testis_1    testis (Ambion)                          3'end   3Seq    single-end
+SRR1005686  mcf10a_1    MCF10A (ATCC)                            3'end   3Seq    single-end
+SRR1005687  mcf10a_2    MCF10A (ATCC)                            3'end   3Seq    single-end
+SRR1005613  mcf7_1      MCF7 (ATCC)                              3'end   3Seq    single-end
+SRR1005605  hela_1      HeLa (ATCC)                              3'end   3Seq    single-end
+SRR1005604  hek292_1    HEK293 (ATCC)                            3'end   3Seq    single-end
+SRR1005681  ntera_1     NTERA2 (ATCC)                            3'end   3Seq    single-end
+SRR1005684  blcl_1      B-LCL (B cells were infected with EBV)   3'end   3Seq    single-end
+SRR1005603  hras_1      MCF10A (expressing HRAS (G12V))          3'end   3Seq    single-end
+SRR1005602  hras_2      MCF10A (expressing HRAS (G12V))          3'end   3Seq    single-end
