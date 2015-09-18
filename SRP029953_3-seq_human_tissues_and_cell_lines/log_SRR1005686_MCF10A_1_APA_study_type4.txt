@@ -1,0 +1,116 @@
+This is cutadapt 1.8.3 with Python 2.7.6
+Command line parameters: -m 10 -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG ./SRR1005686_MCF10A_1.fastq
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 118.37 s (13 us/read; 4.78 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               9,431,694
+Reads with adapters:                 2,160,824 (22.9%)
+Reads that were too short:             948,055 (10.1%)
+Reads written (passing filters):     8,483,639 (89.9%)
+
+Total basepairs processed:   481,016,394 bp
+Total written (filtered):    409,160,981 bp (85.1%)
+
+=== Adapter 1 ===
+
+Sequence: GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 2160824 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Bases preceding removed adapters:
+  A: 58.1%
+  C: 0.2%
+  G: 0.3%
+  T: 0.5%
+  none/other: 40.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	28524	147370.2	0	28524
+4	15912	36842.6	0	15912
+5	23965	9210.6	0	23965
+6	23074	2302.7	0	23074
+7	23660	575.7	0	23660
+8	23157	143.9	0	23157
+9	28464	36.0	0	22510 5954
+10	45331	9.0	1	20521 24810
+11	47913	2.2	1	21630 26283
+12	52999	0.6	1	23179 29820
+13	53765	0.1	1	22578 31187
+14	48443	0.0	1	18772 29671
+15	31899	0.0	1	12099 19800
+16	47465	0.0	1	19526 27939
+17	34940	0.0	1	13719 21221
+18	48444	0.0	1	19687 28422 335
+19	51968	0.0	1	18653 26749 6566
+20	79194	0.0	2	22833 31497 24864
+21	61098	0.0	2	13670 23700 23728
+22	53637	0.0	2	14041 20747 18849
+23	45437	0.0	2	12215 17532 15690
+24	39162	0.0	2	10551 15388 13223
+25	28864	0.0	2	6304 11136 11424
+26	26604	0.0	2	6674 10206 9724
+27	20066	0.0	2	4813 8112 7104 37
+28	18783	0.0	2	5001 7566 6104 112
+29	14673	0.0	2	3903 5889 4644 237
+30	13853	0.0	3	2982 4375 3469 3027
+31	13221	0.0	3	2702 4114 3321 3084
+32	12226	0.0	3	2298 3630 3306 2992
+33	20284	0.0	3	2938 5130 5057 7159
+34	15650	0.0	3	1950 3767 4450 5483
+35	33016	0.0	3	3759 8130 9986 11141
+36	30404	0.0	3	3229 7532 9721 9911 11
+37	17814	0.0	3	3054 5511 5069 4140 40
+38	9783	0.0	3	1985 3206 2565 1917 110
+39	8981	0.0	3	2143 3071 2126 1406 235
+40	6444	0.0	4	1400 2068 1397 897 682
+41	13652	0.0	4	3647 5017 2817 1365 806
+42	14667	0.0	4	3923 5513 3183 1326 722
+43	16120	0.0	4	4488 6084 3449 1477 622
+44	9485	0.0	4	2404 3615 2186 896 384
+45	17274	0.0	4	5150 6978 3609 1144 384 9
+46	1551	0.0	4	232 310 419 404 184 2
+47	1991	0.0	4	537 695 428 212 108 11
+48	779	0.0	4	198 266 170 94 42 9
+49	299	0.0	4	39 63 62 65 38 32
+50	1736	0.0	5	73 84 322 341 463 453
+51	884153	0.0	5	428 6407 10606 146931 272553 447228
+
+Input and filter stats:
+	Input sequences: 7,937,454
+	Input bases: 288,990,382
+	Input mean length: 36.41
+	Good sequences: 4,729,201 (59.58%)
+	Good bases: 135,684,490
+	Good mean length: 28.69
+	Bad sequences: 3,208,253 (40.42%)
+	Bad bases: 90,442,071
+	Bad mean length: 28.19
+	Sequences filtered by specified parameters:
+	trim_tail_left: 1542573
+	trim_tail_right: 218368
+	min_len: 1447312
+# reads processed: 4729201
+# reads with at least one reported alignment: 2015271 (42.61%)
+# reads that failed to align: 1453611 (30.74%)
+# reads with alignments suppressed due to -m: 1260319 (26.65%)
+Reported 2015271 alignments to 1 output stream(s)
+4729201 reads; of these:
+  4729201 (100.00%) were unpaired; of these:
+    1755619 (37.12%) aligned 0 times
+    548624 (11.60%) aligned exactly 1 time
+    2424958 (51.28%) aligned >1 times
+62.88% overall alignment rate
+4729201 reads; of these:
+  4729201 (100.00%) were unpaired; of these:
+    1566337 (33.12%) aligned 0 times
+    601668 (12.72%) aligned exactly 1 time
+    2561196 (54.16%) aligned >1 times
+66.88% overall alignment rate
+# reads processed: 4729201
+# reads with at least one reported alignment: 3262972 (69.00%)
+# reads that failed to align: 1466229 (31.00%)
+Reported 3262972 alignments to 1 output stream(s)
