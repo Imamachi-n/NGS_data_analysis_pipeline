@@ -18,7 +18,7 @@ At first, make 'software' directory for installing each software.
 ```
 mkdir ~/software
 ```
-
+***
 - [Fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 ```
 wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.3.zip
@@ -29,7 +29,7 @@ pwd
 #~/software/FastQC
 echo 'PATH=~/software/FastQC:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [Fastx-toolkits](http://hannonlab.cshl.edu/fastx_toolkit/)
 ```
 wget http://hannonlab.cshl.edu/fastx_toolkit/fastx_toolkit_0.0.13_binaries_Linux_2.6_amd64.tar.bz2
@@ -42,7 +42,7 @@ pwd
 #~/software/fastx_toolkit_0_0_13/bin
 echo 'PATH=~/software/fastx_toolkit_0_0_13/bin:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [PRINSEQ-lite](http://sourceforge.net/projects/prinseq/files/standalone/)
 ```
 tar zxvf prinseq-lite-0.20.4.tar.gz
@@ -54,7 +54,7 @@ pwd
 #~/software/prinseq-lite-0.20.4
 echo 'PATH=~/software/prinseq-lite-0.20.4:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [cutadapt](https://pypi.python.org/pypi/cutadapt)
 ```
 ###python_settings###
@@ -74,7 +74,7 @@ cd cutadapt-1.8.3
 python setup.py build
 python setup.py install --prefix=~/software/python_path
 ```
-
+***
 - [Bowtie](http://bowtie-bio.sourceforge.net/index.shtml)
 ```
 unzip bowtie-1.1.2-linux-x86_64.zip
@@ -83,7 +83,7 @@ pwd
 #~/software/bowtie-1.1.2
 echo 'PATH=~/software/bowtie-1.1.2:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 ```
 unzip bowtie2-2.2.6-linux-x86_64.zip
@@ -92,7 +92,7 @@ pwd
 #~/software/bowtie2-2.2.6
 echo 'PATH=~/software/bowtie2-2.2.6:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [TopHat](https://ccb.jhu.edu/software/tophat/index.shtml)
 ```
 wget https://ccb.jhu.edu/software/tophat/downloads/tophat-2.1.0.Linux_x86_64.tar.gz
@@ -102,7 +102,7 @@ pwd
 #~/software/tophat-2.1.0.Linux_x86_64
 echo 'PATH=~/software/tophat-2.1.0.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)
 ```
 wget http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz
@@ -112,7 +112,7 @@ pwd
 #~/software/cufflinks-2.2.1.Linux_x86_64.tar.gz
 echo 'PATH=~/software/cufflinks-2.2.1.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [samtools](http://www.htslib.org/)
 ```
 wget https://github.com/samtools/samtools/releases/download/1.2/samtools-1.2.tar.bz2
@@ -122,7 +122,7 @@ pwd
 #~/software/samtools-1.2
 echo 'PATH=~/software/samtools-1.2:${PATH}' >> ~/.bashrc
 ```
-
+***
 - [Bedtools](https://github.com/arq5x/bedtools2/releases)
 ```
 wget https://github.com/arq5x/bedtools2/releases/download/v2.25.0/bedtools-2.25.0.tar.gz
