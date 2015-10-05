@@ -1,17 +1,17 @@
 # NGS_data_analysis_pipeline
-###Shell scripts for analyzing NGS data such as RNA-seq, smallRNA-seq, ChIP-seq, BRIC-seq, PAR-CLIP and ribosome profiling(Ribo-seq).
+Shell scripts for analyzing NGS data such as RNA-seq, smallRNA-seq, ChIP-seq, BRIC-seq, PAR-CLIP and ribosome profiling(Ribo-seq).
 ***
 ##Requisite
-Fastqc
-Fastx-toolkits
-cutadapt
-PRINSEQ-lite
-Bowtie
-Bowtie2
-HotHat
-Cufflinks
-samtools
-bedtools
+Fastqc  
+Fastx-toolkits  
+cutadapt  
+PRINSEQ-lite  
+Bowtie  
+Bowtie2  
+HotHat  
+Cufflinks  
+samtools  
+bedtools  
 
 ##Installation
 - [Fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
