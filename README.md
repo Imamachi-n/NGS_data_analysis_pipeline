@@ -12,6 +12,7 @@ HotHat
 Cufflinks  
 samtools  
 Bedtools  
+MACS14  
 
 ##Installation
 At first, make 'software' directory for installing each software.
@@ -134,3 +135,23 @@ pwd
 #~/software/bedtools2/bin
 echo 'PATH=~/software/bedtools2/bin:${PATH}' >> ~/.bashrc
 ```
+***
+- [MACS14](http://liulab.dfci.harvard.edu/MACS/)
+```
+###python_settings###
+#Make_directory
+mkdir -p ~/software/python_path/lib/python2.7/site-packages/
+
+#.bashrc setting
+echo 'export PYTHONHOME=/usr/local' >> ~/.bashrc
+echo 'export PYTHONPATH=~/software/python_path/lib/python2.7/site-packages' >> ~/.bashrc
+echo 'export PATH=~/software/python_path/bin:${PYTHONHOME}/bin:${PATH}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=~/software/python_path/lib:${LD_LIBRARY_PATH}' >> ~/.bashrc
+
+###MACS14_installation###
+wget https://github.com/downloads/taoliu/MACS/MACS-1.4.2-1.tar.gz
+cd MACS-1.4.2
+python setup.py build
+python setup.py install --prefix=~/software/python_path
+```
+

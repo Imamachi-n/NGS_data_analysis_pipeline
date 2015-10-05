@@ -82,3 +82,9 @@ cd bin
 pwd
 #/home/akimitsu/software/bedtools2/bin
 echo 'PATH=/home/akimitsu/software/bedtools2/bin:${PATH}' >> ~/.bashrc
+
+###MACS14###
+wget https://github.com/downloads/taoliu/MACS/MACS-1.4.2-1.tar.gz
+cd MACS-1.4.2
+python setup.py build
+python setup.py install --prefix=~/software/python_path
