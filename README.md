@@ -16,7 +16,7 @@ Bedtools
 ##Installation
 At first, make 'software' directory for installing each software.
 ```
-make ~/software
+mkdir ~/software
 ```
 
 - [Fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
