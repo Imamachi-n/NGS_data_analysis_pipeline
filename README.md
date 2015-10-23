@@ -8,7 +8,7 @@ cutadapt
 PRINSEQ-lite  
 Bowtie  
 Bowtie2  
-HotHat  
+TotHat  
 Cufflinks  
 samtools  
 Bedtools  
