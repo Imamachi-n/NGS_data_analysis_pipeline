@@ -85,6 +85,14 @@ echo 'PATH=/home/akimitsu/software/bedtools2/bin:${PATH}' >> ~/.bashrc
 
 ###MACS14###
 wget https://github.com/downloads/taoliu/MACS/MACS-1.4.2-1.tar.gz
+tar zxvf MACS-1.4.2-1.tar.gz
 cd MACS-1.4.2
+python setup.py build
+python setup.py install --prefix=~/software/python_path
+
+###htseq-count###
+wget https://pypi.python.org/packages/source/H/HTSeq/HTSeq-0.6.1.tar.gz#md5=b7f4f38a9f4278b9b7f948d1efbc1f05
+tar zxvf HTSeq-0.6.1.tar.gz
+cd HTSeq-0.6.1
 python setup.py build
 python setup.py install --prefix=~/software/python_path

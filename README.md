@@ -13,6 +13,7 @@ Cufflinks
 samtools  
 Bedtools  
 MACS14  
+HTSeq(htseq-count)  
 
 ##Installation
 At first, make 'software' directory for installing each software.
@@ -150,8 +151,28 @@ echo 'export LD_LIBRARY_PATH=~/software/python_path/lib:${LD_LIBRARY_PATH}' >> ~
 
 ###MACS14_installation###
 wget https://github.com/downloads/taoliu/MACS/MACS-1.4.2-1.tar.gz
+tar zxvf MACS-1.4.2-1.tar.gz
 cd MACS-1.4.2
 python setup.py build
 python setup.py install --prefix=~/software/python_path
 ```
+***
+- [HTSeq(htseq-count)](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html)
+```
+###python_settings###
+#Make_directory
+mkdir -p ~/software/python_path/lib/python2.7/site-packages/
 
+#.bashrc setting
+echo 'export PYTHONHOME=/usr/local' >> ~/.bashrc
+echo 'export PYTHONPATH=~/software/python_path/lib/python2.7/site-packages' >> ~/.bashrc
+echo 'export PATH=~/software/python_path/bin:${PYTHONHOME}/bin:${PATH}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=~/software/python_path/lib:${LD_LIBRARY_PATH}' >> ~/.bashrc
+
+###MACS14_installation###
+wget https://pypi.python.org/packages/source/H/HTSeq/HTSeq-0.6.1.tar.gz#md5=b7f4f38a9f4278b9b7f948d1efbc1f05
+tar zxvf HTSeq-0.6.1.tar.gz
+cd HTSeq-0.6.1
+python setup.py build
+python setup.py install --prefix=~/software/python_path
+```
