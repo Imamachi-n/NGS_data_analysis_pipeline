@@ -169,7 +169,7 @@ echo 'export PYTHONPATH=~/software/python_path/lib/python2.7/site-packages' >> ~
 echo 'export PATH=~/software/python_path/bin:${PYTHONHOME}/bin:${PATH}' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=~/software/python_path/lib:${LD_LIBRARY_PATH}' >> ~/.bashrc
 
-###MACS14_installation###
+###HTSeq_installation###
 wget https://pypi.python.org/packages/source/H/HTSeq/HTSeq-0.6.1.tar.gz#md5=b7f4f38a9f4278b9b7f948d1efbc1f05
 tar zxvf HTSeq-0.6.1.tar.gz
 cd HTSeq-0.6.1
