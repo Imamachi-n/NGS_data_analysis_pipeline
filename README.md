@@ -15,7 +15,7 @@ Bedtools
 MACS14  
 HTSeq(htseq-count)  
 
-##Installation
+##Install
 At first, make 'software' directory for installing each software.
 ```
 mkdir ~/software
