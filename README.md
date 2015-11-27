@@ -14,6 +14,7 @@ samtools
 Bedtools  
 MACS14  
 HTSeq(htseq-count)  
+SRA Toolkit  
 
 ##Install
 At first, make 'software' directory for installing each software.
