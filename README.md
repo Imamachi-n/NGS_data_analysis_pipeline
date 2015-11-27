@@ -119,6 +119,7 @@ echo 'PATH=~/software/cufflinks-2.2.1.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
 wget https://github.com/samtools/samtools/releases/download/1.2/samtools-1.2.tar.bz2
 tar jxvf samtools-1.2.tar.bz2
+cd samtools-1.2
 make
 pwd
 #~/software/samtools-1.2
@@ -175,4 +176,14 @@ tar zxvf HTSeq-0.6.1.tar.gz
 cd HTSeq-0.6.1
 python setup.py build
 python setup.py install --prefix=~/software/python_path
+```
+***
+- [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/Downloads)
+```
+wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.5.5/sratoolkit.2.5.5-centos_linux64.tar.gz
+tar zxvf sratoolkit.2.5.5-centos_linux64.tar.gz
+cd sratoolkit.2.5.5-centos_linux64/bin
+pwd
+#~/software/sratoolkit.2.5.5-centos_linux64/bin
+echo 'PATH=~/software/sratoolkit.2.5.5-centos_linux64/bin:${PATH}' >> ~/.bashrc
 ```
