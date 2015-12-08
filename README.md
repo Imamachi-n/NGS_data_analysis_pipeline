@@ -177,6 +177,9 @@ tar zxvf HTSeq-0.6.1.tar.gz
 cd HTSeq-0.6.1
 python setup.py build
 python setup.py install --prefix=~/software/python_path
+
+###PySam_installation###
+pip install --install-option="--prefix=~/software/python_path" PySam
 ```
 ***
 - [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/Downloads)
