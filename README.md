@@ -15,6 +15,7 @@ Bedtools
 MACS14  
 HTSeq(htseq-count)  
 SRA Toolkit  
+Trimmomatic  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -190,4 +191,24 @@ cd sratoolkit.2.5.5-centos_linux64/bin
 pwd
 #~/software/sratoolkit.2.5.5-centos_linux64/bin
 echo 'PATH=~/software/sratoolkit.2.5.5-centos_linux64/bin:${PATH}' >> ~/.bashrc
+```
+***
+- [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+```
+wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.35.zip
+unzip Trimmomatic-0.35.zip
+cd Trimmomatic-0.35
+
+###Shell script preparation###
+cat prep_file.sh
+#!/bin/bash
+java -jar "$0" "$@"
+exit $?
+
+###Make easy-to-use trimmomatic command###
+cat prep_file.sh trimmomatic-0.35.jar > trimmomatic_core
+chmod 755 trimmomatic_core
+pwd
+#~/software/samtools-1.2
+echo 'PATH=~/software/Trimmomatic-0.35:${PATH}' >> ~/.bashrc
 ```
