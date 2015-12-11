@@ -17,6 +17,9 @@ HTSeq(htseq-count)
 SRA Toolkit  
 Trimmomatic  
 PARalyzer  
+cERMIT  
+PhyloGibbs  
+PhyloGibbs-MP  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -223,4 +226,29 @@ chmod 755 PARalyzer
 pwd
 #~/software/PARalyzer_v1_1
 echo 'PATH=~/software/PARalyzer_v1_1:${PATH}' >> ~/.bashrc
+```
+***
+- [cERMIT](https://ohlerlab.mdc-berlin.de/software/cERMIT_82/)
+```
+wget https://ohlerlab.mdc-berlin.de/files/duke/transcription/cERMIT/Georgiev_2009_executable_with_sample_datasets_v1.01.tar.gz
+mkdir cERMIT_v1_0
+mv Georgiev_2009_executable_with_sample_datasets_v1.01.tar.gz cERMIT_v1_0
+tar zxvf Georgiev_2009_executable_with_sample_datasets_v1.01.tar.gz
+pwd
+#~/software/cERMIT_v1_0
+echo 'PATH=~/software/cERMIT_v1_0:${PATH}' >> ~/.bashrc
+```
+***
+- [PhyloGibbs](https://www.imsc.res.in/~rsidd/phylogibbs/)
+```
+wget https://www.imsc.res.in/~rsidd/phylogibbs/linux-static/phylogibbs
+chmod 755 phylogibbs
+```
+***
+- [PhyloGibbs-MP](https://www.imsc.res.in/~rsidd/phylogibbs-mp/)
+```
+wget https://www.imsc.res.in/~rsidd/phylogibbs-mp/linux64/phylogibbs-mp-2.0-linux64.tar.gz
+tar zxvf phylogibbs-mp-2.0-linux64.tar.gz
+cd phylogibbs-mp-2.0-linux64
+
 ```
