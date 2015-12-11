@@ -16,6 +16,7 @@ MACS14
 HTSeq(htseq-count)  
 SRA Toolkit  
 Trimmomatic  
+PARalyzer  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -211,4 +212,15 @@ chmod 755 trimmomatic_core
 pwd
 #~/software/Trimmomatic-0.35
 echo 'PATH=~/software/Trimmomatic-0.35:${PATH}' >> ~/.bashrc
+```
+***
+- [PARalyzer](https://ohlerlab.mdc-berlin.de/software/PARalyzer_85/)
+```
+wget https://ohlerlab.mdc-berlin.de/files/duke/PARalyzer/PARalyzer_v1_1_executable.tgz
+tar zxvf PARalyzer_v1_1_executable.tgz
+cd PARalyzer_v1_1
+chmod 755 PARalyzer
+pwd
+#~/software/PARalyzer_v1_1
+echo 'PATH=~/software/PARalyzer_v1_1:${PATH}' >> ~/.bashrc
 ```
