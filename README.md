@@ -209,6 +209,6 @@ exit $?
 cat prep_file.sh trimmomatic-0.35.jar > trimmomatic_core
 chmod 755 trimmomatic_core
 pwd
-#~/software/samtools-1.2
+#~/software/Trimmomatic-0.35
 echo 'PATH=~/software/Trimmomatic-0.35:${PATH}' >> ~/.bashrc
 ```
