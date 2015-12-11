@@ -1,0 +1,78 @@
+This is cutadapt 1.8.3 with Python 2.7.10
+Command line parameters: -m 10 -a TCGTATGCCGTCTTCTGCTTG ./SRR189778_RNA_HuR_PAR-CLIP_completeT1_repB.fastq
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 235.10 s (13 us/read; 4.70 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              18,406,715
+Reads with adapters:                 7,785,367 (42.3%)
+Reads that were too short:             651,177 (3.5%)
+Reads written (passing filters):    17,755,538 (96.5%)
+
+Total basepairs processed:   699,455,170 bp
+Total written (filtered):    618,510,425 bp (88.4%)
+
+=== Adapter 1 ===
+
+Sequence: TCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 21; Trimmed: 7785367 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 9.0%
+  C: 7.6%
+  G: 63.4%
+  T: 11.9%
+  none/other: 8.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	694069	287604.9	0	694069
+4	731789	71901.2	0	731789
+5	730615	17975.3	0	730615
+6	744996	4493.8	0	744996
+7	753953	1123.5	0	753953
+8	748752	280.9	0	748752
+9	701308	70.2	0	693802 7506
+10	632059	17.6	1	530725 101334
+11	423095	4.4	1	351004 72091
+12	256840	1.1	1	208236 48604
+13	168725	0.3	1	139134 29591
+14	147097	0.1	1	120833 26264
+15	98833	0.0	1	76492 22341
+16	67326	0.0	1	54110 13216
+17	50879	0.0	1	40597 10282
+18	43188	0.0	1	33758 9149 281
+19	42925	0.0	1	33072 8897 956
+20	28313	0.0	2	20503 4846 2964
+21	21291	0.0	2	15336 3669 2286
+22	14768	0.0	2	10717 2568 1483
+23	10358	0.0	2	7576 1720 1062
+24	7168	0.0	2	5308 1179 681
+25	6365	0.0	2	4748 1018 599
+26	4557	0.0	2	3329 770 458
+27	2893	0.0	2	2110 502 281
+28	2028	0.0	2	1497 338 193
+29	2018	0.0	2	1443 370 205
+30	2237	0.0	2	1574 409 254
+31	2941	0.0	2	1969 572 400
+32	2818	0.0	2	1937 541 340
+33	2088	0.0	2	1426 414 248
+34	1513	0.0	2	1029 297 187
+35	542	0.0	2	399 80 63
+36	455	0.0	2	345 59 51
+37	2065	0.0	2	1688 219 158
+38	634500	0.0	2	520397 69198 44905
+
+# reads processed: 12535686
+# reads with at least one reported alignment: 5345772 (42.64%)
+# reads that failed to align: 5066923 (40.42%)
+# reads with alignments suppressed due to -m: 2122991 (16.94%)
+Reported 5345772 alignments to 1 output stream(s)
+# reads processed: 12535686
+# reads with at least one reported alignment: 5345772 (42.64%)
+# reads that failed to align: 5066923 (40.42%)
+# reads with alignments suppressed due to -m: 2122991 (16.94%)
+Reported 5345772 alignments to 1 output stream(s)
