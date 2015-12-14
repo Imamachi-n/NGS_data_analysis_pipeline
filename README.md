@@ -249,6 +249,8 @@ chmod 755 phylogibbs
 ```
 wget https://www.imsc.res.in/~rsidd/phylogibbs-mp/linux64/phylogibbs-mp-2.0-linux64.tar.gz
 tar zxvf phylogibbs-mp-2.0-linux64.tar.gz
-cd phylogibbs-mp-2.0-linux64
-
+cd phylogibbs-mp-2.0-linux64/program
+pwd
+#~/software/phylogibbs-mp-2.0-linux64/program
+echo 'PATH=~/software/phylogibbs-mp-2.0-linux64/program:${PATH}' >> ~/.bashrc
 ```
