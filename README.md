@@ -105,7 +105,7 @@ echo 'PATH=~/software/bowtie2-2.2.6:${PATH}' >> ~/.bashrc
 ```
 wget https://ccb.jhu.edu/software/tophat/downloads/tophat-2.1.0.Linux_x86_64.tar.gz
 tar zxvf tophat-2.1.0.Linux_x86_64.tar.gz
-cd tophat-2.1.0.Linux_x86_64.tar.gz
+cd tophat-2.1.0.Linux_x86_64
 pwd
 #~/software/tophat-2.1.0.Linux_x86_64
 echo 'PATH=~/software/tophat-2.1.0.Linux_x86_64:${PATH}' >> ~/.bashrc
@@ -115,7 +115,7 @@ echo 'PATH=~/software/tophat-2.1.0.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
 wget http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz
 tar zxvf cufflinks-2.2.1.Linux_x86_64.tar.gz
-cd cufflinks-2.2.1.Linux_x86_64.tar.gz
+cd cufflinks-2.2.1.Linux_x86_64
 pwd
 #~/software/cufflinks-2.2.1.Linux_x86_64.tar.gz
 echo 'PATH=~/software/cufflinks-2.2.1.Linux_x86_64:${PATH}' >> ~/.bashrc
