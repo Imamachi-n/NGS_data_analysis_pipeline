@@ -1,0 +1,24 @@
+#!/bin/sh
+#$ -S /bin/bash
+#$ -cwd
+#$ -soft -l ljob,lmem
+#$ -l s_vmem=16G
+#$ -l mem_req=16G
+cd tophat_out_150123_Hiseq2B_l1_006_Dr_Akimitu_GCCAAT_L001_R1_wt_2h
+samtools sort accepted_hits.uniq.bam accepted_hits.uniq.sorted
+cd ..
+cd tophat_out_150123_Hiseq2B_l2_007_Dr_Akimitu_CAGATC_L002_R1_no_infection_6h
+samtools sort accepted_hits.uniq.bam accepted_hits.uniq.sorted
+cd ..
+cd tophat_out_150123_Hiseq2B_l2_016_Dr_Akimitu_CCGTCC_L002_R1_wt_6h
+samtools sort accepted_hits.uniq.bam accepted_hits.uniq.sorted
+cd ..
+cd tophat_out_150123_Hiseq2B_l4_003_Dr_Akimitu_TTAGGC_L004_R1_no_infection_18h
+samtools sort accepted_hits.uniq.bam accepted_hits.uniq.sorted
+cd ..
+cd tophat_out_150123_Hiseq2B_l4_009_Dr_Akimitu_GATCAG_L004_R1_wt_18h
+samtools sort accepted_hits.uniq.bam accepted_hits.uniq.sorted
+cd ..
+cuffnorm -p 8 --total-hits-norm -o ./cuffnorm_out_RNA-seq_infection_eRNA_v2_plus_uniq /home/akimitsu/database/Refseq_gene_hg19_June_02_2014+eRNA_v2.gtf ./tophat_out_150123_Hiseq2B_l1_005_Dr_Akimitu_ACAGTG_L001_R1_no_infection_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l1_006_Dr_Akimitu_GCCAAT_L001_R1_wt_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_007_Dr_Akimitu_CAGATC_L002_R1_no_infection_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_016_Dr_Akimitu_CCGTCC_L002_R1_wt_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_003_Dr_Akimitu_TTAGGC_L004_R1_no_infection_18h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_009_Dr_Akimitu_GATCAG_L004_R1_wt_18h/accepted_hits.uniq.sorted.bam
+cuffnorm -p 8 --total-hits-norm -o ./cuffnorm_out_RNA-seq_infection_PROMPT_v2_plus_uniq /home/akimitsu/database/Refseq_gene_hg19_June_02_2014+PROMPT_v2.gtf ./tophat_out_150123_Hiseq2B_l1_005_Dr_Akimitu_ACAGTG_L001_R1_no_infection_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l1_006_Dr_Akimitu_GCCAAT_L001_R1_wt_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_007_Dr_Akimitu_CAGATC_L002_R1_no_infection_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_016_Dr_Akimitu_CCGTCC_L002_R1_wt_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_003_Dr_Akimitu_TTAGGC_L004_R1_no_infection_18h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_009_Dr_Akimitu_GATCAG_L004_R1_wt_18h/accepted_hits.uniq.sorted.bam
+cuffnorm -p 8 --total-hits-norm -o ./cuffnorm_out_RNA-seq_infection_FAMTOM5_eRNA_v3_plus_uniq /home/akimitsu/database/Refseq_gene_hg19_June_02_2014+FAMTOM5_eRNA.gtf ./tophat_out_150123_Hiseq2B_l1_005_Dr_Akimitu_ACAGTG_L001_R1_no_infection_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l1_006_Dr_Akimitu_GCCAAT_L001_R1_wt_2h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_007_Dr_Akimitu_CAGATC_L002_R1_no_infection_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l2_016_Dr_Akimitu_CCGTCC_L002_R1_wt_6h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_003_Dr_Akimitu_TTAGGC_L004_R1_no_infection_18h/accepted_hits.uniq.sorted.bam ./tophat_out_150123_Hiseq2B_l4_009_Dr_Akimitu_GATCAG_L004_R1_wt_18h/accepted_hits.uniq.sorted.bam
