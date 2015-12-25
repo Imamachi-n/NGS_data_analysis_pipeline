@@ -8,7 +8,7 @@ output_file = open(sys.argv[2],'w')
 for line in input_file:
     line = line.rstrip()
     data = line.split("\t")
-    if data[0] == 'gr_id':
+    if data[0] == 'tracking_id':
         print("\t".join(data[:1]),'No_infection_2h_RPKM','WT_2h_RPKM','FC(WT/No)','Status_2h','No_infection_6h_RPKM','WT_6h_RPKM','FC(WT/No)','Status_6h','No_infection_18h_RPKM','WT_18h_RPKM','FC(WT/No)','Status_18h',sep="\t",end="\n",file=output_file)
         continue
     infe_2h_no = float(data[1])
