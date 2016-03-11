@@ -21,6 +21,7 @@ cERMIT
 PhyloGibbs  
 PhyloGibbs-MP  
 STAR  
+RiboTaper
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -36,7 +37,7 @@ cd FastQC
 chmod 755 fastqc
 pwd
 #~/software/FastQC
-echo 'PATH=~/software/FastQC:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/FastQC:${PATH}' >> ~/.bashrc
 ```
 ***
 - [Fastx-toolkits](http://hannonlab.cshl.edu/fastx_toolkit/)
@@ -49,7 +50,7 @@ tar jxvf fastx_toolkit_0.0.13_binaries_Linux_2.6_amd64.tar.bz2
 cd bin
 pwd
 #~/software/fastx_toolkit_0_0_13/bin
-echo 'PATH=~/software/fastx_toolkit_0_0_13/bin:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/fastx_toolkit_0_0_13/bin:${PATH}' >> ~/.bashrc
 ```
 ***
 - [PRINSEQ-lite](http://sourceforge.net/projects/prinseq/files/standalone/)
@@ -61,7 +62,7 @@ chmod 755 prinseq-graphs.pl
 chmod 755 prinseq-graphs-noPCA.pl
 pwd
 #~/software/prinseq-lite-0.20.4
-echo 'PATH=~/software/prinseq-lite-0.20.4:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/prinseq-lite-0.20.4:${PATH}' >> ~/.bashrc
 ```
 ***
 - [cutadapt](https://pypi.python.org/pypi/cutadapt)
@@ -90,7 +91,7 @@ unzip bowtie-1.1.2-linux-x86_64.zip
 cd bowtie-1.1.2
 pwd
 #~/software/bowtie-1.1.2
-echo 'PATH=~/software/bowtie-1.1.2:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/bowtie-1.1.2:${PATH}' >> ~/.bashrc
 ```
 ***
 - [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
@@ -99,7 +100,7 @@ unzip bowtie2-2.2.6-linux-x86_64.zip
 cd bowtie2-2.2.6
 pwd
 #~/software/bowtie2-2.2.6
-echo 'PATH=~/software/bowtie2-2.2.6:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/bowtie2-2.2.6:${PATH}' >> ~/.bashrc
 ```
 ***
 - [TopHat](https://ccb.jhu.edu/software/tophat/index.shtml)
@@ -109,7 +110,7 @@ tar zxvf tophat-2.1.0.Linux_x86_64.tar.gz
 cd tophat-2.1.0.Linux_x86_64
 pwd
 #~/software/tophat-2.1.0.Linux_x86_64
-echo 'PATH=~/software/tophat-2.1.0.Linux_x86_64:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/tophat-2.1.0.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
 ***
 - [Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)
@@ -119,7 +120,7 @@ tar zxvf cufflinks-2.2.1.Linux_x86_64.tar.gz
 cd cufflinks-2.2.1.Linux_x86_64
 pwd
 #~/software/cufflinks-2.2.1.Linux_x86_64.tar.gz
-echo 'PATH=~/software/cufflinks-2.2.1.Linux_x86_64:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/cufflinks-2.2.1.Linux_x86_64:${PATH}' >> ~/.bashrc
 ```
 ***
 - [samtools](http://www.htslib.org/)
@@ -130,7 +131,7 @@ cd samtools-1.2
 make
 pwd
 #~/software/samtools-1.2
-echo 'PATH=~/software/samtools-1.2:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/samtools-1.2:${PATH}' >> ~/.bashrc
 ```
 ***
 - [Bedtools](https://github.com/arq5x/bedtools2/releases)
@@ -142,7 +143,7 @@ make
 cd bin
 pwd
 #~/software/bedtools2/bin
-echo 'PATH=~/software/bedtools2/bin:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/bedtools2/bin:${PATH}' >> ~/.bashrc
 ```
 ***
 - [MACS14](http://liulab.dfci.harvard.edu/MACS/)
@@ -195,7 +196,7 @@ tar zxvf sratoolkit.2.5.5-centos_linux64.tar.gz
 cd sratoolkit.2.5.5-centos_linux64/bin
 pwd
 #~/software/sratoolkit.2.5.5-centos_linux64/bin
-echo 'PATH=~/software/sratoolkit.2.5.5-centos_linux64/bin:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/sratoolkit.2.5.5-centos_linux64/bin:${PATH}' >> ~/.bashrc
 ```
 ***
 - [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
@@ -215,7 +216,7 @@ cat prep_file.sh trimmomatic-0.35.jar > trimmomatic_core
 chmod 755 trimmomatic_core
 pwd
 #~/software/Trimmomatic-0.35
-echo 'PATH=~/software/Trimmomatic-0.35:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/Trimmomatic-0.35:${PATH}' >> ~/.bashrc
 ```
 ***
 - [PARalyzer](https://ohlerlab.mdc-berlin.de/software/PARalyzer_85/)
@@ -226,7 +227,7 @@ cd PARalyzer_v1_1
 chmod 755 PARalyzer
 pwd
 #~/software/PARalyzer_v1_1
-echo 'PATH=~/software/PARalyzer_v1_1:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/PARalyzer_v1_1:${PATH}' >> ~/.bashrc
 ```
 ***
 - [cERMIT](https://ohlerlab.mdc-berlin.de/software/cERMIT_82/)
@@ -237,7 +238,7 @@ mv Georgiev_2009_executable_with_sample_datasets_v1.01.tar.gz cERMIT_v1_0
 tar zxvf Georgiev_2009_executable_with_sample_datasets_v1.01.tar.gz
 pwd
 #~/software/cERMIT_v1_0
-echo 'PATH=~/software/cERMIT_v1_0:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/cERMIT_v1_0:${PATH}' >> ~/.bashrc
 ```
 ***
 - [PhyloGibbs](https://www.imsc.res.in/~rsidd/phylogibbs/)
@@ -253,7 +254,7 @@ tar zxvf phylogibbs-mp-2.0-linux64.tar.gz
 cd phylogibbs-mp-2.0-linux64/program
 pwd
 #~/software/phylogibbs-mp-2.0-linux64/program
-echo 'PATH=~/software/phylogibbs-mp-2.0-linux64/program:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/phylogibbs-mp-2.0-linux64/program:${PATH}' >> ~/.bashrc
 ```
 ***
 - [STAR](https://github.com/alexdobin/STAR)
@@ -262,5 +263,16 @@ git clone https://github.com/alexdobin/STAR.git
 cd STAR/bin/Linux_x86_64_static
 pwd
 #~/software/STAR/bin/Linux_x86_64_static
-echo 'PATH=~/software/STAR/bin/Linux_x86_64_static:${PATH}' >> ~/.bashrc
+echo 'export PATH=~/software/STAR/bin/Linux_x86_64_static:${PATH}' >> ~/.bashrc
+```
+***
+- [RiboTaper](https://ohlerlab.mdc-berlin.de/software/RiboTaper_126/)
+```
+wget https://ohlerlab.mdc-berlin.de/files/RiboTaper/RiboTaper_v1.3.tar.gz
+tar zxvf RiboTaper_v1.3.tar.gz
+mv Version_1.3 RiboTaper_v1.3
+cd RiboTaper_v1.3/scripts
+pwd
+#~/software/RiboTaper_v1.3/scripts
+echo 'export PATH=~/software/RiboTaper_v1.3/scripts:${PATH}' >> ~/.bashrc
 ```
