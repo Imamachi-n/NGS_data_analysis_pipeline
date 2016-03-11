@@ -20,6 +20,7 @@ PARalyzer
 cERMIT  
 PhyloGibbs  
 PhyloGibbs-MP  
+STAR  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -253,4 +254,13 @@ cd phylogibbs-mp-2.0-linux64/program
 pwd
 #~/software/phylogibbs-mp-2.0-linux64/program
 echo 'PATH=~/software/phylogibbs-mp-2.0-linux64/program:${PATH}' >> ~/.bashrc
+```
+***
+- [STAR](https://github.com/alexdobin/STAR)
+```
+git clone https://github.com/alexdobin/STAR.git
+cd STAR/bin/Linux_x86_64_static
+pwd
+#~/software/STAR/bin/Linux_x86_64_static
+echo 'PATH=~/software/STAR/bin/Linux_x86_64_static:${PATH}' >> ~/.bashrc
 ```
