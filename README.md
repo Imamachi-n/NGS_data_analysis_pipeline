@@ -286,9 +286,9 @@ cd RSEM-1.2.29/
 mkdir bin
 make
 make ebseq
-make install DESTDIR=/home/akimitsu/software prefix=/bin
+make install DESTDIR=/home/akimitsu/software/RSEM-1.2.29 prefix=/bin
 cd bin
 pwd
-#~/software/RSEM-1.2.29/bin
-echo 'export PATH=~/software/RSEM-1.2.29/bin:${PATH}' >> ~/.bashrc
+#~/software/RSEM-1.2.29/bin/bin
+echo 'export PATH=~/software/RSEM-1.2.29/bin/bin:${PATH}' >> ~/.bashrc
 ```
