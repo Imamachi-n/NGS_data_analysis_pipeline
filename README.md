@@ -22,6 +22,7 @@ PhyloGibbs
 PhyloGibbs-MP  
 STAR  
 RiboTaper
+RSEM
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -275,4 +276,19 @@ cd RiboTaper_v1.3/scripts
 pwd
 #~/software/RiboTaper_v1.3/scripts
 echo 'export PATH=~/software/RiboTaper_v1.3/scripts:${PATH}' >> ~/.bashrc
+```
+***
+- [RSEM](http://deweylab.github.io/RSEM/)
+```
+wget https://github.com/deweylab/RSEM/archive/v1.2.29.tar.gz
+tar zxvf v1.2.29.tar.gz
+cd RSEM-1.2.29/
+mkdir bin
+make
+make ebseq
+make install DESTDIR=/home/akimitsu/software prefix=/bin
+cd bin
+pwd
+#~/software/RSEM-1.2.29/bin
+echo 'export PATH=~/software/RSEM-1.2.29/bin:${PATH}' >> ~/.bashrc
 ```
