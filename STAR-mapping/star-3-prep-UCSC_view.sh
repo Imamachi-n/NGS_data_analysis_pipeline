@@ -5,7 +5,7 @@
 #$ -l s_vmem=16G
 #$ -l mem_req=16G
 
-inputDir="STAR_output"
+inputDir=${1}
 
 bedtools genomecov -ibam ${inputDir}/STAR_accepted_hits_genome.bam -bg -split > ${inputDir}/STAR_accepted_hits_genome.bg
 echo "track type=bedGraph name=${inputDir} description=${inputDir} visibility=2 maxHeightPixels=40:40:20" > ${inputDir}/tmp.txt

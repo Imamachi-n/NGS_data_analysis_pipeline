@@ -21,8 +21,8 @@ cERMIT
 PhyloGibbs  
 PhyloGibbs-MP  
 STAR  
-RiboTaper
-RSEM
+RiboTaper  
+RSEM  
 
 ##Install
 At first, make 'software' directory for installing each software.

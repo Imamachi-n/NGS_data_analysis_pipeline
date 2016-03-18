@@ -2,8 +2,8 @@
 #$ -S /bin/bash
 #$ -cwd
 #$ -soft -l ljob,lmem
-#$ -l s_vmem=32G
-#$ -l mem_req=32G
+#$ -l s_vmem=16G
+#$ -l mem_req=16G
 
 
 fileName="${1}/STAR_accepted_hits_anno.bam"
@@ -13,5 +13,5 @@ sampleName="rsem_output"
 mkdir ${outputDir}
 echo "-- Calculate expression with RSEM..."
 rsem-calculate-expression --bam --estimate-rspd --calc-ci --seed 12345 -p 8 \
-                          --no-bam-output --ci-memory 2000 \
+                          --no-bam-output --ci-memory 16000 \
                           ${fileName} ${indexPrefix} ${sampleName}
