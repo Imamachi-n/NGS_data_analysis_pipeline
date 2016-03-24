@@ -23,6 +23,7 @@ PhyloGibbs-MP
 STAR  
 RiboTaper  
 RSEM  
+BWA  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -291,4 +292,15 @@ cd bin
 pwd
 #~/software/RSEM-1.2.29/bin/bin
 echo 'export PATH=~/software/RSEM-1.2.29/bin/bin:${PATH}' >> ~/.bashrc
+```
+***
+- [BWA](http://bio-bwa.sourceforge.net/)
+```
+https://github.com/lh3/bwa/releases/download/v0.7.13/bwa-0.7.13.tar.bz2
+tar jxvf bwa-0.7.13.tar.bz2
+cd bwa-0.7.13/
+make
+pwd
+#~/software/bwa-0.7.13
+echo 'export PATH=~/software/bwa-0.7.13:${PATH}' >> ~/.bashrc
 ```
