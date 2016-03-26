@@ -24,6 +24,7 @@ STAR
 RiboTaper  
 RSEM  
 BWA  
+Picard  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -303,4 +304,10 @@ make
 pwd
 #~/software/bwa-0.7.13
 echo 'export PATH=~/software/bwa-0.7.13:${PATH}' >> ~/.bashrc
+```
+***
+- [Picard](https://sourceforge.net/projects/picard/files/picard-tools/)
+```
+#For java 1.7.x
+#Download the latest version(picard-tools-1.119)
 ```
