@@ -25,6 +25,7 @@ RiboTaper
 RSEM  
 BWA  
 Picard  
+subread (featureCounts)  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -310,4 +311,15 @@ echo 'export PATH=~/software/bwa-0.7.13:${PATH}' >> ~/.bashrc
 ```
 #For java 1.7.x
 #Download the latest version(picard-tools-1.119)
+wget https://sourceforge.net/projects/picard/files/picard-tools/1.119/picard-tools-1.119.zip
+```
+***
+- [subread (featureCounts)](https://sourceforge.net/projects/picard/files/picard-tools/)
+```
+wget https://sourceforge.net/projects/subread/files/subread-1.5.0-p2/subread-1.5.0-p2-Linux-x86_64.tar.gz
+tar zxvf subread-1.5.0-p2-Linux-x86_64.tar.gz
+cd subread-1.5.0-p2-Linux-x86_64/bin
+pwd
+#~/software/subread-1.5.0-p2-Linux-x86_64/bin
+echo 'export PATH=~/software/subread-1.5.0-p2-Linux-x86_64/bin:${PATH}' >> ~/.bashrc
 ```
