@@ -16,17 +16,17 @@ BamFile2Name="wt_2h"
 GTFFile="/home/akimitsu/database/Refseq_gene_hg19_June_02_2014+PROMPT+eRNA+FANTOM_eRNA.gtf"
 
 #featureCounts - read counts
-#featureCounts -T 8 -t exon -g gene_id -a ${GTFFile} -o featureCounts_result_${BamFile1Name}.txt ${BamFile1}
-#featureCounts -T 8 -t exon -g gene_id -a ${GTFFile} -o featureCounts_result_${BamFile2Name}.txt ${BamFile2}
+featureCounts -T 8 -t exon -g gene_id -a ${GTFFile} -o featureCounts_result_${BamFile1Name}.txt ${BamFile1}
+featureCounts -T 8 -t exon -g gene_id -a ${GTFFile} -o featureCounts_result_${BamFile2Name}.txt ${BamFile2}
 
-#sed -e "1,2d" featureCounts_result_${BamFile1Name}.txt > featureCounts_result_${BamFile1Name}_pre.txt
-#sed -e "1,2d" featureCounts_result_${BamFile2Name}.txt > featureCounts_result_${BamFile2Name}_pre.txt
+sed -e "1,2d" featureCounts_result_${BamFile1Name}.txt > featureCounts_result_${BamFile1Name}_pre.txt
+sed -e "1,2d" featureCounts_result_${BamFile2Name}.txt > featureCounts_result_${BamFile2Name}_pre.txt
 
-#python3 featureCounts_filecheck.py featureCounts_result_${BamFile1Name}_pre.txt featureCounts_result_${BamFile1Name}_for_R.txt
-#python3 featureCounts_filecheck.py featureCounts_result_${BamFile2Name}_pre.txt featureCounts_result_${BamFile2Name}_for_R.txt
+python3 featureCounts_filecheck.py featureCounts_result_${BamFile1Name}_pre.txt featureCounts_result_${BamFile1Name}_for_R.txt
+python3 featureCounts_filecheck.py featureCounts_result_${BamFile2Name}_pre.txt featureCounts_result_${BamFile2Name}_for_R.txt
 
-#rm featureCounts_result_${BamFile1Name}_pre.txt
-#rm featureCounts_result_${BamFile2Name}_pre.txt
+rm featureCounts_result_${BamFile1Name}_pre.txt
+rm featureCounts_result_${BamFile2Name}_pre.txt
 
 #edgeR - statistical analysis without replicate
 Rscript edgeR_no_replicates.R featureCounts_result_${BamFile1Name}_for_R.txt featureCounts_result_${BamFile2Name}_for_R.txt ${BamFile1Name} ${BamFile2Name}
