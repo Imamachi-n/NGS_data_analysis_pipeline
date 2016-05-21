@@ -26,6 +26,8 @@ RSEM
 BWA  
 Picard  
 subread (featureCounts)  
+circos  
+fusim  
 
 ##Install
 At first, make 'software' directory for installing each software.
@@ -322,4 +324,35 @@ cd subread-1.5.0-p2-Linux-x86_64/bin
 pwd
 #~/software/subread-1.5.0-p2-Linux-x86_64/bin
 echo 'export PATH=~/software/subread-1.5.0-p2-Linux-x86_64/bin:${PATH}' >> ~/.bashrc
+```
+***
+- [circos](http://circos.ca/software/download/)
+```
+wget http://circos.ca/distribution/circos-0.69-2.tgz
+tar zxvf circos-0.69-2.tgz
+pwd
+#/home/akimitsu/software/circos-0.69-2/bin
+echo 'export PATH=~/software/circos-0.69-2/bin:${PATH}' >> ~/.bashrc
+```
+***
+- [FUSIM](http://aebruno.github.io/fusim/install.html)
+```
+wget https://github.com/aebruno/fusim/raw/master/releases/fusim-0.2.2-bin.zip
+unzip fusim-0.2.2-bin.zip
+
+###Shell script preparation###
+cat prep_file.sh
+#!/bin/bash
+java -jar "$0" "$@"
+exit $?
+
+###Make easy-to-use trimmomatic command###
+cat prep_file.sh fusim.jar > fusim
+chmod 755 fusim
+mkdir bin
+mv fusim bin
+cd bin
+pwd
+#/home/akimitsu/software/fusim-0.2.2/bin
+echo 'export PATH=/home/akimitsu/software/fusim-0.2.2/bin:${PATH}' >> ~/.bashrc
 ```
