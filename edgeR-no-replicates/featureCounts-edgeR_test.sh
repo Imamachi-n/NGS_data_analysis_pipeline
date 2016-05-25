@@ -13,7 +13,9 @@ BamFile2Name="wt_2h"
 
 #Annotation
 #GTFFile="/home/akimitsu/database/Refseq_gene_hg19_June_02_2014.gtf"
-GTFFile="/home/akimitsu/database/Refseq_gene_hg19_June_02_2014+PROMPT+eRNA+FANTOM_eRNA.gtf"
+#GTFFile="/home/akimitsu/database/Refseq_gene_hg19_June_02_2014+PROMPT+eRNA+FANTOM_eRNA.gtf"
+GTFFile="/home/akimitsu/database/gencode.v19.annotation_filtered+PROMPT_v2+eRNA_v2+FANTOM_eRNA.gtf"
+annoList="/home/akimitsu/database/gencode.v19.annotation_filtered+PROMPT_v2+eRNA_v2+FANTOM_eRNA_symbol_type_list.txt"
 
 #featureCounts - read counts
 featureCounts -T 8 -t exon -g gene_id -a ${GTFFile} -o featureCounts_result_${BamFile1Name}.txt ${BamFile1}
@@ -30,3 +32,6 @@ rm featureCounts_result_${BamFile2Name}_pre.txt
 
 #edgeR - statistical analysis without replicate
 Rscript edgeR_no_replicates.R featureCounts_result_${BamFile1Name}_for_R.txt featureCounts_result_${BamFile2Name}_for_R.txt ${BamFile1Name} ${BamFile2Name}
+
+#Output results
+python3 annotate_gene_symbol_type.py  ${annoList} edgeR_no_replicates_${BamFile1Name}_vs_${BamFile2Name}.txt edgeR_no_replicates_${BamFile1Name}_vs_${BamFile2Name}_result.txt
